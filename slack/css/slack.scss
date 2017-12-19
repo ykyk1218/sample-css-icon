@@ -1,0 +1,39 @@
+#slack {
+  width: 100px;
+  height: 100px;
+  border-radius: 30%;
+  background: -webkit-linear-gradient(15deg, #2AA48F 30%, #85D3E0 30%, #85D3E0 65%, #78982C 65%);
+  position: relative;
+  overflow: hidden;
+
+  &::before {
+    position: absolute;
+    top: 25px;
+    left: -16px;
+    content: "";
+    width: 140px;
+    height: 50px;
+    background: -webkit-linear-gradient(left, #50C4A1 30%, #fff 30%, #fff 60%, #ECB438 60%);
+    transform: rotate(-15deg);
+  }
+
+  &::after {
+    position: absolute;
+    bottom: -3px;
+    left: -6px;
+    content: "";
+    width: 140px;
+    height: 30px;
+    background: -webkit-linear-gradient(left, #3E133F 30%, #E2206E 30%, #E2206E 60%, #D4161C 60%);
+    transform: rotate(-15deg);
+  }
+
+  #text {
+    font-size: 2em;
+    color: #5B3B57;
+    position: absolute;
+    left: 40%;
+    top: -5%;
+    font-weight: bold;
+  }
+}

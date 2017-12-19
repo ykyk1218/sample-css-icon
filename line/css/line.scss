@@ -1,0 +1,40 @@
+#line {
+  width: 100px;
+  height: 100px;
+  background-color: #54CB24;
+  border-radius: 30%;
+  position: relative;
+
+  #balloon {
+    background-color: #fff;
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #54CB24;
+    font-weight: bold;
+
+    &::before {
+      content: "";
+      border: 10px solid transparent;
+      border-top: 20px solid #fff;
+      border-radius: 5px;
+      transform: rotate(30deg);
+      position: absolute;
+      top: 49px;
+      left: 25px;
+    }
+
+    p {
+      text-align: center;
+      width: 100%;
+      position: absolute;
+      top: 25%;
+      font-size: 1.2rem;
+      transform: translateY(-50%);
+    }
+  }
+}
