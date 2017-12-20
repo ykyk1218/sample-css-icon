@@ -31,8 +31,9 @@
       border-radius: 50%;
       background-color: #fff;
       position: absolute;
-      top: 0px;
-      left: 50px; }
+      top: 4px;
+      left: 44px;
+      z-index: 5; }
       #twitter #body #head::before {
         content: "";
         border: 3px solid transparent;
@@ -52,19 +53,65 @@
     #twitter #body #wing {
       width: 50px;
       height: 50px;
-      background-color: #000;
+      background-color: #fff;
       border-radius: 50%;
       position: absolute;
-      top: 10px;
-      left: 3px; }
+      top: 0px;
+      left: 18px;
+      transform: rotate(45deg);
+      z-index: 3; }
       #twitter #body #wing::before {
+        content: "";
+        width: 35px;
+        height: 35px;
+        background-color: #2AA3F0;
+        border-radius: 40%;
+        position: absolute;
+        top: -6px;
+        left: -5px; }
+    #twitter #body #wing2 {
+      width: 40px;
+      height: 40px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 11px;
+      left: 13px;
+      z-index: 2; }
+      #twitter #body #wing2::before {
         content: "";
         width: 30px;
         height: 30px;
         background-color: #2AA3F0;
-        border-radius: 50%;
+        border-radius: 40%;
         position: absolute;
-        top: 20px;
-        left: 30px; }
+        top: -9px;
+        left: -5px; }
+    #twitter #body #wing3 {
+      width: 25px;
+      height: 25px;
+      background-color: #fff;
+      border-radius: 50%;
+      position: absolute;
+      top: 30px;
+      left: 11px; }
+      #twitter #body #wing3::before {
+        content: "";
+        width: 20px;
+        height: 20px;
+        background-color: #2AA3F0;
+        border-radius: 40%;
+        position: absolute;
+        top: -6px;
+        left: -5px; }
+      #twitter #body #wing3::after {
+        content: "";
+        background-color: #fff;
+        width: 30px;
+        height: 14px;
+        position: absolute;
+        border-radius: 34%;
+        top: 13px;
+        left: 8px; }
 
 /*# sourceMappingURL=twitter.css.map */
