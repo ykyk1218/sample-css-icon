@@ -1,0 +1,70 @@
+#twitter {
+  width: 100px;
+  height: 100px;
+  background-color: #2AA3F0;
+  float: right;
+  position: relative;
+  overflow: hidden; }
+  #twitter #body {
+    width: 80px;
+    height: 80px;
+    background-color: #fff;
+    border: none;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #twitter #body::before {
+      content: "";
+      position: absolute;
+      top: -20px;
+      left: -20px;
+      background-color: #2AA3F0;
+      border: none;
+      border-radius: 50%;
+      width: 80px;
+      height: 80px; }
+    #twitter #body #head {
+      width: 30px;
+      height: 30px;
+      border-radius: 50%;
+      background-color: #fff;
+      position: absolute;
+      top: 0px;
+      left: 50px; }
+      #twitter #body #head::before {
+        content: "";
+        border: 3px solid transparent;
+        border-left: 15px solid #fff;
+        position: absolute;
+        top: 3px;
+        left: 24px;
+        transform: rotate(-10deg); }
+      #twitter #body #head::after {
+        content: "";
+        border: 3px solid transparent;
+        border-left: 15px solid #fff;
+        position: absolute;
+        top: 10px;
+        left: 25px;
+        transform: rotate(10deg); }
+    #twitter #body #wing {
+      width: 50px;
+      height: 50px;
+      background-color: #000;
+      border-radius: 50%;
+      position: absolute;
+      top: 10px;
+      left: 3px; }
+      #twitter #body #wing::before {
+        content: "";
+        width: 30px;
+        height: 30px;
+        background-color: #2AA3F0;
+        border-radius: 50%;
+        position: absolute;
+        top: 20px;
+        left: 30px; }
+
+/*# sourceMappingURL=twitter.css.map */
