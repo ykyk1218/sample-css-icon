@@ -4,41 +4,41 @@ $background-color: #2AA3F0;
   width: 100px;
   height: 100px;
   background-color: $background-color;
-  float: right;
   position: relative;
   overflow: hidden;
 
   #body {
-    width: 80px;
-    height: 80px;
+    width: 75px;
+    height: 75px;
     background-color: #fff;
     border: none;
     border-radius: 50%;
     position: absolute;
     top: 50%;
     left: 50%;
-    transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%) rotate(10deg);
 
     &::before {
       content: "";
       position: absolute;
-      top: -20px;
-      left: -20px;
+      top: 4px;
+      left: -15px;
       background-color: $background-color;
       border: none;
       border-radius: 50%;
-      width: 80px;
-      height: 80px;
+      width: 65px;
+      height: 65px;
     }
 
     #head {
-      width: 30px;
-      height: 30px;
+      width: 25px;
+      height: 25px;
       border-radius: 50%;
       background-color: #fff;
       position: absolute;
-      top: 4px;
-      left: 44px;
+      top: 7px;
+      left: 45px;
+      transform: rotate(-30deg);
       z-index: 5;
 
       &::before {
@@ -47,7 +47,7 @@ $background-color: #2AA3F0;
         border-left: 15px solid #fff;
         position: absolute;
         top: 3px;
-        left: 24px;
+        left: 17px;
         transform: rotate(-10deg);
       }
       &::after {
@@ -55,8 +55,8 @@ $background-color: #2AA3F0;
         border: 3px solid transparent;
         border-left: 15px solid #fff;
         position: absolute;
-        top: 10px;
-        left: 25px;
+        top: 8px;
+        left: 19px;
         transform: rotate(10deg);
       }
     }
@@ -74,13 +74,13 @@ $background-color: #2AA3F0;
 
       &::before {
         content: "";
-        width: 35px;
-        height: 35px;
+        width: 40px;
+        height: 40px;
         background-color: $background-color;
-        border-radius: 40%;
+        border-radius: 50%;
         position: absolute;
-        top: -6px;
-        left: -5px;
+        top: -5px;
+        left: -9px;
       }
     }
     #wing2 {
@@ -89,8 +89,8 @@ $background-color: #2AA3F0;
       background-color: #fff;
       border-radius: 50%;
       position: absolute;
-      top: 11px;
-      left: 13px;
+      top: 16px;
+      left: 16px;
       z-index: 2;
 
       &::before {
@@ -105,13 +105,13 @@ $background-color: #2AA3F0;
       }
     }
     #wing3 {
-      width: 25px;
-      height: 25px;
+      width: 23px;
+      height: 23px;
       background-color: #fff;
       border-radius: 50%;
       position: absolute;
-      top: 30px;
-      left: 11px;
+      top: 42px;
+      left: 23px;
 
       &::before {
         content: "";
