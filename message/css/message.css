@@ -1,0 +1,25 @@
+#message {
+  width: 100px;
+  height: 100px;
+  background-color: #4CE647;
+  border-radius: 30px;
+  position: relative; }
+  #message #balloon {
+    background-color: #fff;
+    width: 70px;
+    height: 60px;
+    border-radius: 50%;
+    position: absolute;
+    top: 45%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #message #balloon::before {
+      content: "";
+      border: 5px solid transparent;
+      border-top: 22px solid #fff;
+      transform: rotate(47deg);
+      position: absolute;
+      top: 47px;
+      left: 5px; }
+
+/*# sourceMappingURL=message.css.map */
