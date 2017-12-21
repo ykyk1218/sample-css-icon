@@ -1,0 +1,26 @@
+#clock {
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+  position: relative; }
+  #clock #clock-in {
+    background-color: #fff;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%); }
+    #clock #clock-in [id*="time"] {
+      font-size: 10px;
+      font-weight: bold;
+      position: absolute; }
+    #clock #clock-in #time-12 {
+      top: 5px;
+      left: 35px; }
+    #clock #clock-in #time-1 {
+      top: calc($time-base-text-top + 5px);
+      left: 55px; }
+
+/*# sourceMappingURL=clock.css.map */
