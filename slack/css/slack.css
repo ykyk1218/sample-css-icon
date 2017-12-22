@@ -12,7 +12,7 @@
     content: "";
     width: 140px;
     height: 50px;
-    background: -webkit-linear-gradient(left, #50C4A1 30%, #fff 30%, #fff 60%, #ECB438 60%);
+    background: -webkit-linear-gradient(left, #50C4A1 30%, #fff 30%, #fff 60.5%, #ECB438 60.5%);
     transform: rotate(-15deg); }
   #slack::after {
     position: absolute;
@@ -24,11 +24,11 @@
     background: -webkit-linear-gradient(left, #3E133F 30%, #E2206E 30%, #E2206E 60%, #D4161C 60%);
     transform: rotate(-15deg); }
   #slack #text {
-    font-size: 2em;
+    font-size: 2.3em;
     color: #5B3B57;
     position: absolute;
-    left: 40%;
-    top: -5%;
+    left: 35%;
+    top: -12%;
     font-weight: bold; }
 
-/*# sourceMappingURL=chrome.css.map */
+/*# sourceMappingURL=slack.css.map */

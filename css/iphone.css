@@ -1,0 +1,23 @@
+#back {
+  width: 450px;
+  height: 600px;
+  background-image: url("../wall.png");
+  background-size: cover; }
+
+#iphone {
+  width: 450px;
+  height: 300px;
+  display: grid;
+  grid-gap: 5px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: auto; }
+  #iphone .app {
+    margin: 10px 0; }
+    #iphone .app:first-child {
+      margin-left: 5px; }
+    #iphone .app:active {
+      transform: scale(10);
+      transition: all 0.5s 0s ease;
+      opacity: 0; }
+
+/*# sourceMappingURL=iphone.css.map */
