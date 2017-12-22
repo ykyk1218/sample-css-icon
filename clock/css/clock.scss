@@ -1,11 +1,13 @@
-$time-base-text-top: 5px;
-$time-base-text-left: 35px;
+$time-base-text-top: 3px;
+$time-base-text-bottom: 3px;
+$time-base-text-left: 34px;
 
 #clock {
   width: 100px;
   height: 100px;
   background-color: #000;
   position: relative;
+  border-radius: 30px;
 
   #clock-in {
     background-color: #fff;
@@ -23,12 +25,110 @@ $time-base-text-left: 35px;
       position: absolute;
     }
     #time-12 {
-      top: 5px;
+      top: $time-base-text-top;
       left: 35px;
     }
     #time-1 {
-      top: calc($time-base-text-top + 5px);
-      left: 55px;
+      top: $time-base-text-top + 3px;
+      left: $time-base-text-left + 20px;
     }
+    #time-2 {
+      top: $time-base-text-top + 14px;
+      left: $time-base-text-left + 30px;
+    }
+    #time-3 {
+      top: $time-base-text-top + 30px;
+      left: $time-base-text-left + 36px;
+    }
+    #time-4 {
+      bottom: $time-base-text-bottom + 14px;
+      left: $time-base-text-left + 30px;
+    }
+    #time-5 {
+      bottom: $time-base-text-bottom + 3px;
+      left: $time-base-text-left + 20px;
+    }
+    #time-6 {
+      bottom: $time-base-text-bottom + -2px;
+      left: 39px;
+    }
+    #time-7 {
+      bottom: $time-base-text-bottom + 3px;
+      left: $time-base-text-left - 11px;
+    }
+    #time-8 {
+      bottom: $time-base-text-bottom + 14px;
+      left: $time-base-text-left - 24px;
+    }
+    #time-9 {
+      top: $time-base-text-top + 30px;
+      left: $time-base-text-left - 30px;
+    }
+    #time-10 {
+      top: $time-base-text-top + 15px;
+      left: $time-base-text-left - 26px;
+    }
+    #time-11 {
+      top: $time-base-text-top + 3px;
+      left: $time-base-text-left - 13px;
+    }
+    #center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 5px;
+      height: 5px;
+      background-color: #000;
+    }
+    #hour {
+      animation: rotation-h 240s linear infinite;
+      position: absolute;
+      top: calc(50% - 1px);
+      left: calc(25% + 1px);
+      width: 25%;
+      height: 2px;
+      background-color: #000;
+      transform-origin: calc(100% - 1px) center;
+    }
+    #min {
+      animation: rotation-m 360s linear infinite;
+      position: absolute;
+      top: calc(50% - 1px);
+      left: 9px; 
+      width: 40%;
+      height: 2px;
+      background-color: #000;
+      transform-origin: calc(100% - 1px) center;
+    }
+    #second {
+      animation: rotation-s 10s linear infinite;
+      position: absolute;
+      top: calc(50% - 1px);
+      left: 9px; 
+      width: 40%;
+      height: 2px;
+      background-color: #FAA648;
+      transform-origin: calc(100% - 1px) center;
+    }
+
+    @keyframes rotation-h {
+        0% {transform: rotate(150deg)} 
+        100% {transform: rotate(510deg)}
+    }
+
+    @keyframes rotation-m {
+        0% {transform: rotate(90deg)} 
+        100% {transform: rotate(450deg)} 
+    }
+
+    @keyframes rotation-s {
+        0% {transform: rotate(90deg)} 
+        100% {transform: rotate(450deg)}
+    }
+
   }
+
+
 }

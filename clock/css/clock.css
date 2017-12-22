@@ -2,7 +2,8 @@
   width: 100px;
   height: 100px;
   background-color: #000;
-  position: relative; }
+  position: relative;
+  border-radius: 30px; }
   #clock #clock-in {
     background-color: #fff;
     width: 80px;
@@ -17,10 +18,91 @@
       font-weight: bold;
       position: absolute; }
     #clock #clock-in #time-12 {
-      top: 5px;
+      top: 3px;
       left: 35px; }
     #clock #clock-in #time-1 {
-      top: calc($time-base-text-top + 5px);
-      left: 55px; }
+      top: 6px;
+      left: 54px; }
+    #clock #clock-in #time-2 {
+      top: 17px;
+      left: 64px; }
+    #clock #clock-in #time-3 {
+      top: 33px;
+      left: 70px; }
+    #clock #clock-in #time-4 {
+      bottom: 17px;
+      left: 64px; }
+    #clock #clock-in #time-5 {
+      bottom: 6px;
+      left: 54px; }
+    #clock #clock-in #time-6 {
+      bottom: 1px;
+      left: 39px; }
+    #clock #clock-in #time-7 {
+      bottom: 6px;
+      left: 23px; }
+    #clock #clock-in #time-8 {
+      bottom: 17px;
+      left: 10px; }
+    #clock #clock-in #time-9 {
+      top: 33px;
+      left: 4px; }
+    #clock #clock-in #time-10 {
+      top: 18px;
+      left: 8px; }
+    #clock #clock-in #time-11 {
+      top: 6px;
+      left: 21px; }
+    #clock #clock-in #center {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      border-radius: 50%;
+      width: 5px;
+      height: 5px;
+      background-color: #000; }
+    #clock #clock-in #hour {
+      animation: rotation-h 240s linear infinite;
+      position: absolute;
+      top: calc(50% - 1px);
+      left: calc(25% + 1px);
+      width: 25%;
+      height: 2px;
+      background-color: #000;
+      transform-origin: calc(100% - 1px) center; }
+    #clock #clock-in #min {
+      animation: rotation-m 360s linear infinite;
+      position: absolute;
+      top: calc(50% - 1px);
+      left: 9px;
+      width: 40%;
+      height: 2px;
+      background-color: #000;
+      transform-origin: calc(100% - 1px) center; }
+    #clock #clock-in #second {
+      animation: rotation-s 10s linear infinite;
+      position: absolute;
+      top: calc(50% - 1px);
+      left: 9px;
+      width: 40%;
+      height: 2px;
+      background-color: #FAA648;
+      transform-origin: calc(100% - 1px) center; }
+@keyframes rotation-h {
+  0% {
+    transform: rotate(150deg); }
+  100% {
+    transform: rotate(510deg); } }
+@keyframes rotation-m {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(450deg); } }
+@keyframes rotation-s {
+  0% {
+    transform: rotate(90deg); }
+  100% {
+    transform: rotate(450deg); } }
 
 /*# sourceMappingURL=clock.css.map */
