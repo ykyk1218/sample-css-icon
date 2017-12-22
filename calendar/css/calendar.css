@@ -1,0 +1,21 @@
+#calendar {
+  font-family: 'MS Sans Serif';
+  width: 100px;
+  height: 100px;
+  background-color: #fff;
+  border-radius: 30px; }
+  #calendar p {
+    margin: 0;
+    padding: 0; }
+  #calendar #week {
+    padding-top: 25px;
+    font-size: 0.8rem;
+    text-align: center;
+    line-height: 0; }
+  #calendar #date {
+    padding-top: 30px;
+    font-size: 3.3rem;
+    text-align: center;
+    line-height: 0; }
+
+/*# sourceMappingURL=calendar.css.map */
